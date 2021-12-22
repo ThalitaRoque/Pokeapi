@@ -12,6 +12,7 @@
 
 }
 
+
 .display {
   display: flex;
   flex-direction: row;
@@ -104,4 +105,21 @@ h1 {
     margin: 0 auto;
 
 
+}
+
+.myinput {
+    background-color: whitesmoke;
+    text-transform: uppercase;
+    color: rgb(150, 25, 150);
+}
+
+.mybutton {
+    background-color: rgb(150, 25, 150);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    background-color: rgb(150, 25, 150);
 }

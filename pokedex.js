@@ -1,6 +1,7 @@
 const div$$ = document.querySelector(".container");
 const pokemonsarray = [];
 const Pokelist = document.querySelector("#pokedex");
+const input$$ = document.querySelector(".myinput");
 
 
 
@@ -24,6 +25,9 @@ for (let i = 1; i <= 151; i++) {
 paintsPokemons(mappedPokemons)
 
 };
+
+
+
 const paintsPokemons = (mappedPokemons) => { 
     let listPokemons = "";
     mappedPokemons.forEach(poke => {
@@ -37,9 +41,11 @@ const paintsPokemons = (mappedPokemons) => {
 
   Pokelist.innerHTML = listPokemons;
     
-    
+
 }
-
-
+const filteredPokemons = mappedPokemons.filter((result) =>
+    result.name.toLowerCase().includes(input$$.value.toLowerCase()) 
+);
+input$$.addEventListener("input", getPokemons);
 
 getPokemons();
