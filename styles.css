@@ -5,6 +5,12 @@
   background-color: black;
   
 }
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
 
 .display {
   display: flex;
@@ -19,7 +25,7 @@
   padding: 16px;
   background-image: url("https://i.pinimg.com/originals/b0/16/5c/b0165ce6804deb6a668691605ba28a0f.gif");
   background-size: cover;
-  margin: 8px;
+  margin: 20px;
   margin-bottom: 16px;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
@@ -78,9 +84,9 @@ h1 {
   margin-bottom: 50px;
 }
 
-.pokemonlogo {
-  width: 30%;
-  margin-bottom: 30px;
+.logopokemon {
+  width: 100%;
+  height: 400px;
 }
 
 .pokemonimage {
@@ -90,3 +96,12 @@ h1 {
 
 }
 
+#pokedex {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+
+}

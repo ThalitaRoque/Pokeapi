@@ -18,7 +18,7 @@ for (let i = 1; i <= 151; i++) {
             type: result.types.map((type) => type.type.name).join(' '),
             id: result.id,
             
-            
+           
     }));
 
 paintsPokemons(mappedPokemons)
